@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Blog Website</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Blog Website</h1>
+        <a href="/articles/new" class="btn btn-primary">Create New Blog</a>
+        <br>
+        <br>
+        <% articles.forEach(article => { %>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title"><%= article.title %></h4>
+                    <div class="card-subtitle text-muted mb-2"><%= article.createdAt.toLocaleDateString() %></div>
+                    <div class="card-text mb-2"><%= article.description %></div>
+                    <% if (article.image) { %>
+                        <img src="<%= article.image %>" alt="Image for <%= article.title %>">
+                    <% } %>
+                    <a href="/articles/<%= article.slug %>" class="btn btn-primary">Read More</a>
+                    <a href="/articles/edit/<%= article.id %>" class="btn btn-info">Edit</a>
+                    <form action="/articles/<%= article.id %>?_method=DELETE" method="POST" class="d-inline">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </div>
+            </div>
+        <% }) %>
+        <script src="/script.js"></script>
+    </div>
+</body>
+</html>

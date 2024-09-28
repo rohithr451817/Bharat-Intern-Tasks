@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #e0f7fa; /* Light cyan background for the whole page */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff; /* White background for containers */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #00796b; /* Teal color for headings */
+}
+
+a {
+    color: #00796b; /* Teal color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #00796b; /* Teal color for labels */
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fafafa; /* Light gray background for inputs */
+}
+
+.form-control:focus {
+    border-color: #00796b; /* Teal border on focus */
+    outline: none;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #00796b; /* Teal color for primary buttons */
+}
+
+.btn-primary:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+.btn-secondary {
+    background-color: #80deea; /* Light cyan color for secondary buttons */
+}
+
+.btn-secondary:hover {
+    background-color: #4dd0e1; /* Slightly darker cyan on hover */
+}
+
+.btn-info {
+    background-color: #26a69a; /* Teal color for info buttons */
+}
+
+.btn-info:hover {
+    background-color: #00796b; /* Darker teal on hover */
+}
+
+.btn-danger {
+    background-color: #e64a19; /* Deep orange color for danger buttons */
+}
+
+.btn-danger:hover {
+    background-color: #d84315; /* Darker orange on hover */
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background: #ffffff; /* White background for cards */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.5em;
+    color: #00796b; /* Teal color for card titles */
+}
+
+.card-subtitle {
+    color: #004d40; /* Darker teal color for subtitles */
+}
+
+.card-text {
+    margin: 10px 0;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    margin: 10px 0; /* Margin around images */
+}

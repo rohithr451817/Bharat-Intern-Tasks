@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #eef2f7; /* Light background */
+    color: #2d2d2d; /* Darker text color */
+}
+
+/* Container and Layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White container */
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0056b3; /* Blue primary heading color */
+    margin-bottom: 20px;
+}
+
+/* Form Section */
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-section form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-group {
+    flex: 1 1 48%;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+    color: #0056b3; /* Label color matching primary */
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #29a3a3; /* Teal border */
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    background-color: #f5f7fa; /* Subtle background color */
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #36c2c2; /* Highlighted teal border */
+}
+
+.btn-submit {
+    flex-basis: 100%;
+    padding: 10px 20px;
+    background-color: #36c2c2; /* Teal button */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #2d9898; /* Darker teal on hover */
+}
+
+/* Expenses List */
+.expenses-list {
+    margin-top: 20px;
+}
+
+.expenses-list h2 {
+    font-size: 1.75rem;
+    color: #0056b3; /* Blue heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead th {
+    background-color: #29a3a3; /* Teal table header */
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+tfoot td {
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Delete Button */
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #e74c3c; /* Red delete button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}

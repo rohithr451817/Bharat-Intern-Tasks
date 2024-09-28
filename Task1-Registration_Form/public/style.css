@@ -1,0 +1,86 @@
+/* Basic reset */
+body, h1, h2, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.main {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+}
+
+h2, h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* 3D input shadow */
+}
+
+input:focus {
+    border-color: #6e45e2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add depth on focus */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #6e45e2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(110, 69, 226, 0.4); /* 3D button effect */
+}
+
+button:hover {
+    background-color: #563dc8;
+    box-shadow: 0 10px 30px rgba(110, 69, 226, 0.6); /* Increased shadow on hover */
+}
+
+p {
+    text-align: center;
+    color: #555;
+}
